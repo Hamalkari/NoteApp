@@ -1,10 +1,19 @@
 <template lang="pug">
-  #app
-    h1.title Hello world
+  v-app
+    v-container(grid-list-md)
+      Navbar
+      NoteList
 </template>
 
 <script>
-export default {}
+import NoteList from '@/components/NoteList.vue';
+import Navbar from '@/components/Navbar.vue';
+export default {
+  components: {
+    NoteList,
+    Navbar
+  }
+};
 </script>
 
 <style lang="scss" scoped></style>

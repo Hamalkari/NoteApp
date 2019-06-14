@@ -17,7 +17,7 @@ mongoose
   .catch(err => {
     console.log(err);
   });
-
+mongoose.set("useFindAndModify", false);
 // Настраиваем middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

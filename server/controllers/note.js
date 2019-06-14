@@ -16,7 +16,7 @@ module.exports = {
       await note.save();
       res
         .status(200)
-        .json({ status: "success", title: "Запись успешно добавлена" });
+        .json({ status: "success", title: "Запись успешно добавлена", note });
     } catch (error) {
       res.json({ status: "error", title: `${error}` });
     }
